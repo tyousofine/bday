@@ -83,13 +83,13 @@ font-family: Arial, Helvetica, sans-serif;
   
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 360px) {
   .container h1 {
     font-size: 3rem;
   }
 
   .container .vid {
-    max-width: 250px;
+    max-width: 350px;
 
     padding: 0;
   }
