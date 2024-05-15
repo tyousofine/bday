@@ -29,15 +29,46 @@
 
 }
 
+@keyframes wiggle{
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* @keyframes wiggle {
+  0% { transform: rotate(0deg); }
+ 80% { transform: rotate(0deg); }
+ 85% { transform: rotate(5deg); }
+ 95% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+} */
+
 .container h1 {
   font-size: 6rem;
   font-family:cursive;
-
   color: rgba(255, 255, 0, 0.8);
  /* color: pink; */
   text-transform: uppercase;
   text-wrap: wrap;
   text-align: center;
+  
+}
+
+.wiggle {
+
+  animation: wiggle 2.5s infinite;
 }
 
 .container .vid{

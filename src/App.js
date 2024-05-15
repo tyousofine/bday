@@ -10,7 +10,7 @@ function App() {
         width={window.width}
         height={window.height}
       />
-      <h1>Happy Birthday Will!</h1>
+      <h1 className='wiggle'>Happy Birthday Will!</h1>
       <video className='vid'
         src="vid.mp4"
         loop
