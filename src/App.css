@@ -5,24 +5,40 @@
   font-size: 18px;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+overflow: auto;
+scrollbar-width: none; 
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+}
+
 
 .container {
+  padding: 2rem;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #000111;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   gap: 5%;
   position: relative;
+  border: 1px solid red;
 
 }
 
 .balloons {
   background-image: url('../public/bal.png');
   background-size: 200px 100px;
-  width: 100%;
+  width: 100vw;
   height: 50px;
   position: absolute;
   top: 0;
@@ -63,6 +79,20 @@
   text-transform: uppercase;
   text-wrap: wrap;
   text-align: center;
+  width: 100%;
+  
+}
+
+@media screen and (max-width: 400px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  .container .vid {
+    max-width: 250px;
+    border: 1px solid green;
+    padding: 0;
+  }
   
 }
 
@@ -72,5 +102,6 @@
 }
 
 .container .vid{
+
 
 }
