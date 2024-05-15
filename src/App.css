@@ -31,7 +31,7 @@ flex-direction: column;
   height: 100vh;
   gap: 5%;
   position: relative;
-  border: 1px solid red;
+
 
 }
 
@@ -90,7 +90,7 @@ flex-direction: column;
 
   .container .vid {
     max-width: 250px;
-    border: 1px solid green;
+
     padding: 0;
   }
   
